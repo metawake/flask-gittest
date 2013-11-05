@@ -1,0 +1,27 @@
+<h2>Git status</h2>
+<p>The branch you're running is {{current_branch}}</p>
+<p>Modified status: {{is_dirty}}</p>
+
+
+<table>
+	<tr>
+		<th>[HASH]</th>
+		<th></th>
+		<th><a href="#">Message</a></th>
+		<th><a href="#">Author</a></th>
+		<th><a href="#">Date</a></th></tr><tr>
+		<th colspan="5"><hr></th>
+	</tr>
+	
+	{% for hexsha, message, author, date in latest_commits %}
+	<tr>
+		<td valign="top">[{{hexsha}}]</td>
+		<td>&nbsp;</td>
+		<td><a href="#">{{message}}</a></td>
+		<td align="right">{{author}}</td>
+		<td align="right">&nbsp;&nbsp;&nbsp;{{date}}</td>
+	</tr>
+	{% endfor %}
+
+	<tr><th colspan="5"><hr></th></tr>
+</table>

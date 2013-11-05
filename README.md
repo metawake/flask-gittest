@@ -7,6 +7,9 @@ Typically, it's good to make sure whether the app was modified manually on serve
 see a few latest commits to understand how often the app has been updated lately and which
 are the latest fixes/commits.
 
+
+<img src="img/gittest.jpg" alt="Flask/git status" border="2"/>
+
 Usage:
 
 <blockquote>

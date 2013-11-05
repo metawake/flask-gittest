@@ -8,10 +8,7 @@ gittest = Blueprint('git', __name__,
 
 @gittest.route("/git", methods=['GET'])
 def git():
-    import pdb
-    pdb.set_trace()
     GIT_PATH = current_app.config.get('GIT_PATH', '.')
-    #GIT_PATH = "/home/alex/workspace/conor/wizbots" 
     repo = Repo.init(GIT_PATH)
 
     current_branch = str(repo.head.ref)

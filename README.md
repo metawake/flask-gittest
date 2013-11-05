@@ -1,4 +1,3 @@
-
 This extension allows to quickly look up git info of running Flask webapp.
 
 Use case: a tester can provide git info of running app by just looking at http://webapp-url/git
@@ -10,6 +9,9 @@ are the latest fixes/commits.
 
 Usage:
 
-from flask.ext.gittest import gittest
-app.register_blueprint(gittest)
-
+<blockquote>
+<code>
+from flask.ext.gittest import gittest<br/>
+ app.register_blueprint(gittest)
+</code>
+</blockquote>
